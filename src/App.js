@@ -13,7 +13,7 @@ class App extends Component {
    }
 
   componentDidMount() {
-    const url = 'http://localhost:3005/api/getPrices/aurorabaycare';    
+    const url = 'http://localhost:8080/api/getPrices/aurorabaycare';    
     // 'http://localhost:3005/api/getPrices/osuwexner'
     // 'http://localhost:3005/api/getPrices/mvhohio';
     fetch(url)
