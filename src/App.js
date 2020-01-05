@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactTable from 'react-table';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import "react-table/react-table.css";
@@ -28,33 +27,6 @@ class App extends Component {
   }
 
   render() {
-    const tableData1 = this.state.posts;
-    const columns = [{
-        Header: 'Service',
-        accessor: 'service'
-      },
-      {
-        Header: 'Billing Term',
-        accessor: 'billing_term'
-      },
-      {
-        Header: 'Price',
-        accessor: 'price'
-      },
-      {
-        Header: 'Service Type',
-        accessor: 'service_type'
-      }
-    ]
-    /*
-    return(<ReactTable
-      columns={columns}
-      data={this.state.posts}>
-      </ReactTable>
-      );
-      
-      */
-
     return (
       <Router>
       <div>
