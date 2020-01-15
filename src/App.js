@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import "react-table/react-table.css";
-import { Aurora_Bay_Care } from './aurorBayCare';
-import { MVH_Ohio } from './mvhOhio';
-import { Osu_Wexner } from './osuwexner';
+import { Aurora_Bay_Care } from './places/aurorBayCare';
+import { MVH_Ohio } from './places/mvhOhio';
+import { Osu_Wexner } from './places/osuwexner';
+import { UVa_Health } from './places/uvahealth';
+import { Nationwide_Child } from './places/nationwidechild';
 
 class App extends Component {
   constructor( props ) {
@@ -43,10 +45,17 @@ class App extends Component {
           </li>
           <h3>Ohio</h3>
           <li>
-            <Link to="/mvh-ohio">View Prices for Miam Valley Hospital - Ohio</Link>
+            <Link to="/mvh-ohio">View Prices for Miami Valley Hospital - Ohio</Link>
           </li>
           <li>
             <Link to="/osu-wexner">View Prices for Ohio State University - Wexner</Link>
+          </li>
+          <li>
+            <Link to="/nationwide-childrens">View Prices for Nationwide Children's Hospital Ohio</Link>
+          </li>
+          <h3>Virginia</h3>
+          <li>
+            <Link to="/uva-health">View Prices for University of Virginia Health System</Link>
           </li>
         </ul>
 
@@ -56,6 +65,8 @@ class App extends Component {
         <Route path="/aurora-baycare" component={Aurora_Bay_Care} />
         <Route path="/mvh-ohio" component={MVH_Ohio} />
         <Route path="/osu-wexner" component={Osu_Wexner} />
+        <Route path="/nationwide-childrens" component={Nationwide_Child} />
+        <Route path="/uva-health" component={UVa_Health} />
       </div>
     </Router>
     );
