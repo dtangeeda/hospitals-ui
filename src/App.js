@@ -39,10 +39,6 @@ class App extends Component {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <h3>Wisconsin</h3>
-          <li>
-            <Link to="/aurora-baycare">View Prices for Aurora-Baycare</Link>
-          </li>
           <h3>Ohio</h3>
           <li>
             <Link to="/mvh-ohio">View Prices for Miami Valley Hospital - Ohio</Link>
@@ -57,8 +53,11 @@ class App extends Component {
           <li>
             <Link to="/uva-health">View Prices for University of Virginia Health System</Link>
           </li>
+          <h3>Wisconsin</h3>
+          <li>
+            <Link to="/aurora-baycare">View Prices for Aurora-Baycare</Link>
+          </li>
         </ul>
-
         <hr />
 
         <Route exact path="/" component={Home} />
