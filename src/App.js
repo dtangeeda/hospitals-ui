@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "react-table/react-table.css";
 import { Aurora_Bay_Care } from './places/aurorBayCare';
 import { MVH_Ohio } from './places/mvhOhio';
+import { JFK_Florida } from './places/jfkFlorida';
 import { Osu_Wexner } from './places/osuwexner';
 import { UVa_Health } from './places/uvahealth';
 import { Nationwide_Child } from './places/nationwidechild';
@@ -17,7 +18,7 @@ class App extends Component {
    }
 
   componentDidMount() {
-    const url = 'http://localhost:8080/api/getPrices/aurorabaycare';    
+    const url = 'do not need';//'http://localhost:8080/api/getPrices/aurorabaycare';    
     // 'http://localhost:3005/api/getPrices/osuwexner'
     // 'http://localhost:3005/api/getPrices/mvhohio';
     fetch(url)
@@ -38,6 +39,10 @@ class App extends Component {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <h3>Florida</h3>
+          <li>
+            <Link to="/jfk-florida">View Prices for JFK Medical Center - Atlantis, Florida</Link>
           </li>
           <h3>Ohio</h3>
           <li>
@@ -62,6 +67,7 @@ class App extends Component {
 
         <Route exact path="/" component={Home} />
         <Route path="/aurora-baycare" component={Aurora_Bay_Care} />
+        <Route path="/jfk-florida" component={JFK_Florida} />
         <Route path="/mvh-ohio" component={MVH_Ohio} />
         <Route path="/osu-wexner" component={Osu_Wexner} />
         <Route path="/nationwide-childrens" component={Nationwide_Child} />
