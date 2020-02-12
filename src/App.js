@@ -5,6 +5,7 @@ import "react-table/react-table.css";
 import { Aurora_Bay_Care } from './places/aurorBayCare';
 import { MVH_Ohio } from './places/mvhOhio';
 import { JFK_Florida } from './places/jfkFlorida';
+import { Duke_Health } from './places/dukehealth';
 import { Osu_Wexner } from './places/osuwexner';
 import { UVa_Health } from './places/uvahealth';
 import { Nationwide_Child } from './places/nationwidechild';
@@ -34,7 +35,7 @@ class App extends Component {
       <Router>
       <div>
       <div className="ui container" style={{ margin: '4vh 0' }}>
-        <h1>Welcome to Hospital Price List!</h1>
+        <h1>Welcome to Hospital Price List</h1>
         </div>
         <ul>
           <li>
@@ -43,6 +44,10 @@ class App extends Component {
           <h3>Florida</h3>
           <li>
             <Link to="/jfk-florida">View Prices for JFK Medical Center - Atlantis, Florida</Link>
+          </li>
+          <h3>North Carolina</h3>
+          <li>
+            <Link to="/duke-health">View Prices for Duke University Hospital -Durham, NC</Link>
           </li>
           <h3>Ohio</h3>
           <li>
@@ -60,7 +65,7 @@ class App extends Component {
           </li>
           <h3>Wisconsin</h3>
           <li>
-            <Link to="/aurora-baycare">View Prices for Aurora-Baycare</Link>
+            <Link to="/aurora-baycare">View Prices for Aurora BayCare Medical Center, Green Bay, WI</Link>
           </li>
         </ul>
         <hr />
@@ -68,6 +73,7 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/aurora-baycare" component={Aurora_Bay_Care} />
         <Route path="/jfk-florida" component={JFK_Florida} />
+        <Route path="/duke-health" component={Duke_Health} />
         <Route path="/mvh-ohio" component={MVH_Ohio} />
         <Route path="/osu-wexner" component={Osu_Wexner} />
         <Route path="/nationwide-childrens" component={Nationwide_Child} />
