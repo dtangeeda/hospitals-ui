@@ -16,7 +16,7 @@ class Routes extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={App} />
-          <Route path="/aurora-baycare" component={Aurora_Bay_Care} />
+          <Route exact path="/aurora-baycare" component={Aurora_Bay_Care} />
           <Route path="/jfk-florida" component={JFK_Florida} />
           <Route path="/duke-health" component={Duke_Health} />
           <Route path="/mvh-ohio" component={MVH_Ohio} />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactTable from "react-table";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import Back from "../images/back.svg";
 
 export const Aurora_Bay_Care = () => {
   const [data, setData] = useState([]);
@@ -12,8 +13,8 @@ export const Aurora_Bay_Care = () => {
       .then(responseData => {
         setData(responseData);
       });
-    console.log(url);
   }, []);
+
   const columns = [
     {
       Header: "Charge Code",
@@ -34,21 +35,30 @@ export const Aurora_Bay_Care = () => {
   ];
 
   return (
-    <div>
+    <div style={{ margin: "5vh 0", padding: "2rem" }}>
+      <Router>
+        <Link to="/">
+          <span style={{ margin: "4rem 0rem", fontsize: "1rem" }}>
+            <img src={Back} height="10" width="20" /> Back
+          </span>
+        </Link>
+      </Router>
       <div
         className="ui container"
-        style={{ margin: "5vh 0", padding: "2rem" }}
+        style={{ margin: " 0 auto", textAlign: "center", padding: "3rem" }}
       >
-        <Router>
-          <Link to="/">
-            <span style={{ margin: "4rem 2rem", fontsize: "1rem" }}>Home </span>
-          </Link>
-        </Router>
         <h1 style={{ textAlign: "center" }}>
-          Welcome to Auror Bay Care Hospital Price List
+          Auror Bay Care Hospital Price List
         </h1>
       </div>
-      <ReactTable columns={columns} data={data.length ? data : []}></ReactTable>
+
+      <ReactTable
+        columns={columns}
+        data={data.length ? data : []}
+        defaultPageSize={50}
+        filterable
+        className="-striped -highlight"
+      ></ReactTable>
     </div>
   );
 };
