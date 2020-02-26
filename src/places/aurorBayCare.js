@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactTable from "react-table";
-import { LoopCircleLoading } from "react-loadingg";
+import LoopCircleLoader from "./loader";
 import { Link } from "react-router-dom";
 import Back from "../images/back.svg";
 
@@ -59,14 +59,17 @@ export const Aurora_Bay_Care = () => {
           Auror Bay Care Hospital Price List
         </h1>
       </div>
-      {loading === false ? <LoopCircleLoading /> : ""}
-      <ReactTable
-        columns={columns}
-        data={data.length ? data : []}
-        defaultPageSize={50}
-        filterable
-        className="-striped -highlight"
-      ></ReactTable>
+      {loading === false ? (
+        <LoopCircleLoader />
+      ) : (
+        <ReactTable
+          columns={columns}
+          data={data.length ? data : []}
+          defaultPageSize={50}
+          filterable
+          className="-striped -highlight"
+        ></ReactTable>
+      )}
     </div>
   );
 };

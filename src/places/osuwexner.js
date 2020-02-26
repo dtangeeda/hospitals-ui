@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactTable from "react-table";
-import { LoopCircleLoading } from "react-loadingg";
+import LoopCircleLoader from "./loader";
 import { Link } from "react-router-dom";
 import Back from "../images/back.svg";
 
@@ -53,8 +53,14 @@ export const Osu_Wexner = () => {
       >
         <h1 style={{ textAlign: "center" }}>Osu Wexner Hospital Price List</h1>
       </div>
-      {loading === false ? <LoopCircleLoading /> : ""}
-      <ReactTable columns={columns} data={data.length ? data : []}></ReactTable>
+      {loading === false ? (
+        <LoopCircleLoader />
+      ) : (
+        <ReactTable
+          columns={columns}
+          data={data.length ? data : []}
+        ></ReactTable>
+      )}
     </div>
   );
 };
