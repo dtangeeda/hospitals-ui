@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactTable from "react-table";
 import { LoopCircleLoading } from "react-loadingg";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Back from "../images/back.svg";
 
 export const Nationwide_Child = () => {
