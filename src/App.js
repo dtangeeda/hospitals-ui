@@ -18,9 +18,6 @@ class App extends Component {
           <h1>Welcome to Hospital Price List</h1>
         </div>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
           <h3>Florida</h3>
           <li>
             <Link to="/jfk-florida">
@@ -62,7 +59,6 @@ class App extends Component {
             </Link>
           </li>
         </ul>
-        <hr />
       </div>
     );
   }

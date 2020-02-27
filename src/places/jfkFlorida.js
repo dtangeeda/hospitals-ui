@@ -44,6 +44,10 @@ export const JFK_Florida = () => {
     }
   ];
 
+  const filterCaseInsensitive = ({ id, value }, row) => {
+    return row[id] ? row[id].toLowerCase().includes(value.toLowerCase()) : true;
+  };
+
   return (
     <div style={{ margin: "5vh 0", padding: "2rem" }}>
       <Link to="/">
@@ -63,6 +67,7 @@ export const JFK_Florida = () => {
         <ReactTable
           defaultPageSize={50}
           filterable
+          defaultFilterMethod={filterCaseInsensitive}
           className="-striped -highlight"
           columns={columns}
           data={data.length ? data : []}

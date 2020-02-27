@@ -44,6 +44,10 @@ export const Aurora_Bay_Care = () => {
     }
   ];
 
+  const filterCaseInsensitive = ({ id, value }, row) => {
+    return row[id] ? row[id].toLowerCase().includes(value.toLowerCase()) : true;
+  };
+
   return (
     <div style={{ margin: "5vh 0", padding: "2rem" }}>
       <Link to="/">
@@ -65,6 +69,7 @@ export const Aurora_Bay_Care = () => {
         <ReactTable
           columns={columns}
           data={data.length ? data : []}
+          defaultFilterMethod={filterCaseInsensitive}
           defaultPageSize={50}
           filterable
           className="-striped -highlight"
