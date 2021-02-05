@@ -1,0 +1,52 @@
+@import "~antd/dist/antd.css";
+
+.Blog-content {
+  background-image: url(../images//Blog.png);
+  background-size: cover;
+  background-position: center;
+  height: 48vh;
+}
+
+/* card Arow icon */
+.anticon-arrow-right {
+  color: #0094ff;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.cards {
+  margin-top: 40px;
+}
+.Blog-show-More {
+  border: none;
+  font-size: 18px;
+  background: none;
+  font-weight: 600;
+  opacity: 0.5;
+  outline: none;
+}
+.Blog-show-More:hover {
+cursor: pointer;
+color: #0094ff;
+
+}
+.show-btn-div {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.blog-para {
+  line-height: 28px;
+  letter-spacing: 0.04em;
+}
+.blog-artical-heading {
+  margin-top: 30px !important;
+  font-size: 28px;
+}
+
+.up-comming-articles{
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}

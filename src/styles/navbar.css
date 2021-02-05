@@ -1,0 +1,28 @@
+ @import "~antd/dist/antd.css" ; 
+
+.nav-links a{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+  padding: 10px;
+}
+.nav-links li{
+  list-style: none;
+}
+.navbar img{
+  width:204px;
+  margin-top :7px
+}
+.nav-links {
+  display: flex;
+  float: right;
+}
+.ant-layout-header{
+  background: #0094FF;
+  height: 41px;
+  line-height: 24px;
+}
+
+
+
