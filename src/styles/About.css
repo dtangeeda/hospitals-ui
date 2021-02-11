@@ -1,0 +1,20 @@
+.about-sec{
+  height: 50vh;
+ }
+.ant-layout-content {
+  background-color: white;
+}
+.About-content {
+  text-align: center;
+  height: 48vh;
+  background-image: linear-gradient(rgb(43 41 41), rgba(12, 10, 10, 0)),url(../images//contactbg.png);
+  background-size: cover;
+}
+.about-para{
+  width: 50%;
+  margin: auto;
+}
+.about-heading {
+  margin-top: 80px;
+  color: white;
+}

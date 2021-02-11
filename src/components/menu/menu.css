@@ -1,0 +1,32 @@
+.menus-main {
+  padding: 0;
+  margin-top: 30px;
+}
+.ant-menu-inline {
+  border: none;
+}
+.ant-menu-sub.ant-menu-inline {
+  border: solid 1px rgb(239, 239, 239);
+  background-color: white;
+}
+.ant-menu-item a {
+  color: #0094ff;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.ant-menu-inline .ant-menu-submenu {
+  background: #0094ff;
+  margin-top: 5px;
+}
+.ant-menu-submenu-title {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.ant-menu-submenu-title:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline #4ab4ff;
+}
+.ant-menu-submenu-arrow {
+  color: white;
+}
