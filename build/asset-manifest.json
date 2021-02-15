@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/dtangeeda/hospitals-ui/static/css/main.e3de534e.chunk.css",
+    "main.js": "/dtangeeda/hospitals-ui/static/js/main.0e97075b.chunk.js",
+    "main.js.map": "/dtangeeda/hospitals-ui/static/js/main.0e97075b.chunk.js.map",
+    "runtime-main.js": "/dtangeeda/hospitals-ui/static/js/runtime-main.5de7f55f.js",
+    "runtime-main.js.map": "/dtangeeda/hospitals-ui/static/js/runtime-main.5de7f55f.js.map",
+    "static/css/2.09cfaa7c.chunk.css": "/dtangeeda/hospitals-ui/static/css/2.09cfaa7c.chunk.css",
+    "static/js/2.48ee2f7c.chunk.js": "/dtangeeda/hospitals-ui/static/js/2.48ee2f7c.chunk.js",
+    "static/js/2.48ee2f7c.chunk.js.map": "/dtangeeda/hospitals-ui/static/js/2.48ee2f7c.chunk.js.map",
+    "index.html": "/dtangeeda/hospitals-ui/index.html",
+    "precache-manifest.e74b6263d7857fee3eec5ea79af2d72e.js": "/dtangeeda/hospitals-ui/precache-manifest.e74b6263d7857fee3eec5ea79af2d72e.js",
+    "service-worker.js": "/dtangeeda/hospitals-ui/service-worker.js",
+    "static/css/2.09cfaa7c.chunk.css.map": "/dtangeeda/hospitals-ui/static/css/2.09cfaa7c.chunk.css.map",
+    "static/css/main.e3de534e.chunk.css.map": "/dtangeeda/hospitals-ui/static/css/main.e3de534e.chunk.css.map",
+    "static/js/2.48ee2f7c.chunk.js.LICENSE": "/dtangeeda/hospitals-ui/static/js/2.48ee2f7c.chunk.js.LICENSE",
+    "static/media/blog.css": "/dtangeeda/hospitals-ui/static/media/Blog.293ee857.png",
+    "static/media/Logo1.png": "/dtangeeda/hospitals-ui/static/media/Logo1.e0ecf43b.png",
+    "static/media/card1.png": "/dtangeeda/hospitals-ui/static/media/card1.50c50fb4.png",
+    "static/media/card2.png": "/dtangeeda/hospitals-ui/static/media/card2.df999329.png",
+    "static/media/card3.png": "/dtangeeda/hospitals-ui/static/media/card3.b9d9ef7d.png",
+    "static/media/Contact.css": "/dtangeeda/hospitals-ui/static/media/contactbg.a9f1b1f6.png",
+    "static/media/footerlogo.svg": "/dtangeeda/hospitals-ui/static/media/footerlogo.a11dc554.svg",
+    "static/media/home.png": "/dtangeeda/hospitals-ui/static/media/home.66da5e74.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5de7f55f.js",
+    "static/css/2.09cfaa7c.chunk.css",
+    "static/js/2.48ee2f7c.chunk.js",
+    "static/css/main.e3de534e.chunk.css",
+    "static/js/main.0e97075b.chunk.js"
+  ]
+}
