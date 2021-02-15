@@ -5,7 +5,7 @@ export const UVa_Health = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/uvahealth";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/uvahealth";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {

@@ -15,6 +15,7 @@
   margin-top :7px
 }
 .nav-links {
+  margin-top: 4px;
   display: flex;
   float: right;
 }

@@ -5,7 +5,7 @@ export const Nationwide_Child = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/nationwidechildrens";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/nationwidechildrens";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {

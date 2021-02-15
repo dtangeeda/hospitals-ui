@@ -5,7 +5,7 @@ export const MVH_Ohio = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/mvhohio";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/mvhohio";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {

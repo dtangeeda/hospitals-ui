@@ -5,7 +5,7 @@ export const Aurora_Bay_Care = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/aurorabaycare";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/aurorabaycare";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {

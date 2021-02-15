@@ -5,7 +5,7 @@ export const Osu_Wexner = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/osuwexner";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/osuwexner";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {

@@ -5,7 +5,7 @@ export const Duke_Health = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/dukehealth";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/dukehealth";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {

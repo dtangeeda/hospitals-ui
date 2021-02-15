@@ -5,7 +5,7 @@ export const JFK_Florida = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://medicalpriceindex.com/api/getPrices/jfkflorida";
+    const url = "https://api.medicalpriceindex.com/api/getPrices/jfkflorida";
     fetch(url)
       .then(res => res.json())
       .then(responseData => {
