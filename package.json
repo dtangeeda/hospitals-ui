@@ -21,35 +21,21 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
+},
+"eslintConfig": {
     "extends": "react-app"
-  },
-  "browserslist": {
+},
+"browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:3000",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dtangeeda/hospitals-ui.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dtangeeda/hospitals-ui/issues"
-  },
-  "homepage": "https://github.com/dtangeeda/hospitals-ui#readme",
-  "description": ""
+},
+"proxy": "http://localhost:3000"
 }
